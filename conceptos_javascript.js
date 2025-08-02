@@ -3,7 +3,7 @@ Definiciones:
 Intro a JS: prompt - alert - tipos de datos primit. y valores especiales.
 Fundamentos de JS: operaciones matematicas - comparaciones - condicionales.
 Funciones: declaradas, expresadas y flechas.
-Arrays y objetos: 
+Arrays y objetos: método push, indcludes, indexOf - array con ciclo for
 **************************************************************************/
 
 // prompt →  Simular un input
