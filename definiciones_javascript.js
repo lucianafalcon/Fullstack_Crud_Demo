@@ -208,7 +208,7 @@ let producto = {
   precio: 200,
   esImportado: true,
   stock: 15,
-  direccion: { calle: "italia", numero: "225" }, // corregido: "direccon" → "direccion" y "numro" → "numero"
+  direccion: { calle: "italia", numero: "225" }, // corregido: "direccon" → "direccion" y "numero" → "numero"
 };
 
 console.log(typeof producto); // Imprime object
@@ -245,7 +245,7 @@ console.log(resultado);
 let numerosDeLaSuerte = [15, 16, 17];
 console.log(numerosDeLaSuerte); // imprime [15, 16, 17]
 
-// array en un objeto - ejemplo 2
+// array que contiene objetos: - ejemplo 2
 let productos = [
   { nombre: "teléfono", precio: 200 }, // elemento 1
   { nombre: "computadora", precio: 200 }, // elemento 2
