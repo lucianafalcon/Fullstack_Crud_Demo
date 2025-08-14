@@ -1,10 +1,13 @@
-/************************************************************************** 
+/********************************************************************************* 
 Definiciones:
 Intro a JS: prompt - alert - tipos de datos primit. y valores especiales.
 Fundamentos de JS: operaciones matematicas - comparaciones - condicionales.
 Funciones: declaradas, expresadas y flechas.
 Arrays y objetos: método push, indcludes, indexOf - array con ciclo for
-**************************************************************************/
+*********************************************************************************/
+
+/********************************************************************************/
+// Intro a JS
 
 // prompt →  Simular un input
 prompt("Ingresa un número");
@@ -80,7 +83,7 @@ console.log(saludar()); // undefined
 let usuario = null;
 console.log(usuario); // null
 
-/***************************************************************************/
+/********************************************************************************/
 // Operaciones Matemáticas
 
 let n1 = 1;
@@ -131,15 +134,15 @@ switch (marcaAuto2) {
 }
 console.log(`Impuesto: ${impuesto}`);
 
-/***************************************************************************/
+/********************************************************************************/
 // Funciones
 
 // Sirve para reutilizar código. Se declara una vez y se ejecuta cuando se la llama.
 // Existen 3 tipos en js: función flecha, función anónima y función declarada.
 
-//  Función flecha (arrow function) - opción 1
+//  Función flecha (arrow function) - opción 1:
 //    Cuando tengo solo una instrucción, no hacen falta las llaves {}
-//  Función flecha (arrow function) - opción 2
+//  Función flecha (arrow function) - opción 2:
 //    Cuando tengo más de una instrucción, uso llaves {} y debo usar return si quiero devolver un valor
 
 //--------------------------------------------------
@@ -180,7 +183,7 @@ let suma2 = nombreDeLaFuncion(undefined, 2); // Resultado = 9
 console.log(suma); // Imprime 11
 console.log(suma2); // Imprime 9
 
-/***************************************************************************/
+/********************************************************************************/
 // Objetos vs Arrays
 
 // Tipos de datos primitivos:
