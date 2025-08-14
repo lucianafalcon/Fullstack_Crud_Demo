@@ -5,7 +5,7 @@ Funciones de orden superior
 DOM y Eventos en Javascript
 *********************************************************************************/
 
-/***************************************************************************/
+/********************************************************************************/
 // Función Constructora
 
 // Clases:
@@ -45,7 +45,7 @@ usuario2.saludar("este es un parametro");
 // el nombre
 // precio, etc ...
 
-// opcion 1 - mando los datos del front al back:
+// Opción 1 - mando los datos del front al back
 let producto = {
   image: "https://laimagen.com",
   nombre: "telefono",
@@ -57,7 +57,7 @@ const enviarProductoAlBack = (queInfo) => {};
 enviarProductoAlBack(producto);
 
 //--------------------------------------------------
-// opcion 2 - traigo datos del back y los uso en el front:
+// Opción 2 - traigo datos del back y los uso en el front
 const productos = [
   {
     id: 1,
@@ -161,10 +161,10 @@ const productos = [
   },
 ]; // ponele que esto es el back
 
-// 1) Traigo los datos del back al front
+// 1) traigo los datos del back al front
 let productosDelBack = JSON.stringify(productos);
 
-// 2) Parseo los datos traídos (osea paso de strings a arrays)
+// 2) parseo los datos traídos (osea paso de strings a arrays)
 const parsearJson = (informacionParaParsear) => {
   JSON.parse("[]"); // []
   JSON.parse("[]"); // true
