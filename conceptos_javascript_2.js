@@ -45,19 +45,27 @@ usuario2.saludar("este es un parametro");
 // el nombre
 // precio, etc ...
 
-// Opción 1 - mando los datos del front al back
+// Opción 1 - mando datos del front al back (por ej. cuando lleno un formulario online)
 let producto = {
   image: "https://laimagen.com",
   nombre: "telefono",
   precio: 100,
 };
-//enviar
-const enviarProductoAlBack = (queInfo) => {};
+
+// 1) convertir a texto JSON
+const enviarProductoAlBack = (queInfo) => {
+  console.log(producto);
+  // transformarlo en un string
+  let productoListoParaElBackend = JSON.stringify(producto);
+  console.log(productoListoParaElBackend);
+};
+
+// 2)  enviar los datos parseados a back (esto lo vemos despues con fetch usando POST)
 
 enviarProductoAlBack(producto);
 
 //--------------------------------------------------
-// Opción 2 - traigo datos del back y los uso en el front
+// Opción 2 - traigo datos del back y los uso en el front (por ej. cuando quiero ver/modificar info de una base de datos)
 const productos = [
   {
     id: 1,
