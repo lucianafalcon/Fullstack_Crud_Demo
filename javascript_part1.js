@@ -1,5 +1,4 @@
 /********************************************************************************* 
-Definiciones:
 Intro a JS: prompt - alert - tipos de datos primit. y valores especiales.
 Fundamentos de JS: operaciones matematicas - comparaciones - condicionales.
 Funciones: declaradas, expresadas y flechas.

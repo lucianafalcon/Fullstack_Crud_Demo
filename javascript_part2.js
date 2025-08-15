@@ -1,16 +1,15 @@
 /********************************************************************************* 
-Definiciones:
 Funciones Constructoras y Almacenamiento: clases - json - local y sesion storage
 Funciones de orden superior
 DOM y Eventos en Javascript
 *********************************************************************************/
 
 /********************************************************************************/
-// Función Constructora
+// Clases
 
-// Clases:
 // tambien llamados constructores (antes se llamaban funciones constructoras)
 // analogía: una clase es un molde (fábrica de algo, que cada vez que la uso, crea algo nuevo)
+
 class Usuario {
   // paso 1: la construccion de las propiedades
   constructor(nombre, email, password, edad) {
@@ -31,7 +30,7 @@ let usuario1 = new Usuario("pepe", "pepe@gmail.com", "222", "32");
 let usuario2 = new Usuario("juan", "juan@gmail.com", "333", "44");
 let usuario3 = new Usuario("maria", "maria@gmail.com", "444", "22");
 
-let usuarios = [usuario, usuario2, usuario3];
+let usuarios = [usuario1, usuario2, usuario3];
 console.log(usuarios);
 
 usuario2.saludar("este es un parametro");
@@ -175,11 +174,57 @@ let productosDelBack = JSON.stringify(productos);
 // 2) parseo los datos traídos (osea paso de strings a arrays)
 const parsearJson = (informacionParaParsear) => {
   JSON.parse("[]"); // []
-  JSON.parse("[]"); // true
-  JSON.parse("[]"); // {}
+  JSON.parse("true"); // true
+  JSON.parse("{}"); // {}
 
   let parseados = JSON.parse(informacionParaParsear); // antes --> "[{}{}]" --> ahora [{}{}]
   console.log(parseados);
 };
 
 parsearJson(productosDelBack);
+
+//--------------------------------------------------
+// Local y Session Storage
+
+// - Es un almacenamiento vinculado a un origen específico (protocolo + dominio + puerto),
+// independiente de la IP y separado para cada dominio
+// - No se comparte entre usuarios diferentes ni navegadores distintos
+// - Todo lo que guardo en el local/session storage tiene que ser del tipo stringify
+
+// Application → ahí ves Local Storage y Session Storage con sus claves y valores
+// Console → muestra lo que escribas en console.log() o mensajes de error, de JS
+// Elements → ahí inspeccionas el HTML y CSS en tiempo real
+
+// con HTmL y js --> podemos cambiar el valor
+// con CSS y js --> podemos hacer estilos dinamicos en base a esa variable
+
+let modoClaro = JSON.parse(localStorage.getItem("modoClaro") || "true");
+
+let interruptor = document.getElementById("btn-drk");
+interruptor.addEventListener("click", () => {
+  modoClaro = !modoClaro;
+  localStorage.setItem("modoClaro", JSON.stringify(modoClaro));
+  console.log(modoClaro);
+});
+
+//--------------------------------------------------
+// storage
+
+// guardar info
+localStorage.setItem("carrito", JSON.stringify(productos));
+localStorage.setItem("ombreDelUsuario", "pepe");
+
+// leer info
+let productosDelCarrito = JSON.parse(localStorage.getItem("carrito"));
+console.log(productosDelCarrito);
+
+// actualizar info --> volviendo a crear
+localStorage.setItem("nombreDelUsuario", "juan");
+
+// elimina una info en particular
+localStorage.removeItem("carrito");
+
+// limpiar toda la info del storage
+localStorage.clear();
+
+/********************************************************************************/
