@@ -1,6 +1,6 @@
 /********************************************************************************* 
 Funciones Constructoras y Almacenamiento: clases - json - local y sesion storage
-Funciones de orden superior
+Funciones de Orden Superior
 DOM y Eventos en Javascript
 *********************************************************************************/
 
@@ -228,3 +228,19 @@ localStorage.removeItem("carrito");
 localStorage.clear();
 
 /********************************************************************************/
+// Funciones de Orden Superior
+
+// programación imperativa
+
+//find
+const encontrarProducto = (nombre) => {
+  for (let i = 0; i < productos.length; i++) {
+    if (productos[i].nombre === nombre) {
+      return productos[i];
+    }
+  }
+  return "el producto no se encontro";
+};
+
+let productoCompleto = encontrarProducto("MacBook Pro 14");
+console.log(productoCompleto);
