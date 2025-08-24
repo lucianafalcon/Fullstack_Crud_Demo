@@ -1,6 +1,6 @@
 /********************************************************************************* 
 Funciones Constructoras y Almacenamiento: clases - json - local y sesion storage
-Funciones de Orden Superior: programación imperativa y declarativa - ej sistema bancario
+Funciones de Orden Superior: programación imperativa y declarativa - ej sist bancario
 DOM y Eventos en Javascript
 *********************************************************************************/
 
@@ -9,6 +9,16 @@ DOM y Eventos en Javascript
 
 // también llamados constructores (antes se llamaban funciones constructoras)
 // analogía: una clase es un molde (fábrica de algo, que cada vez que la uso, crea algo nuevo)
+
+// En js una función constructora es una función especial que se utiliza para inicializar un
+// nuevo objeto. La idea es proporcionar una forma de crear objetos que modelen algo en el mundo
+// real o en la lógica de un programa, como una Persona, un Pedido, o un Coche, por ejemplo.
+
+// Antes de la introducción de las clases en ECMAScript 2015 (ES6), las funciones constructoras
+// eran la manera estándar en js para crear tipos de datos que simularan las clases como se conocen
+// en otros lenguajes de programación orientados a objetos como Java o C#. A través de las funciones
+// constructoras, se podían definir propiedades y métodos específicos para un tipo de objeto,
+// reutilizando la misma estructura base cada vez que se instanciaba un objeto nuevo.
 
 class Usuario {
   // paso 1: la construccion de las propiedades
@@ -59,7 +69,7 @@ const enviarProductoAlBack = (queInfo) => {
   console.log(productoListoParaElBackend);
 };
 
-// 2)  enviar los datos parseados a back (esto lo vemos despues con fetch usando POST)
+// 2) enviar los datos parseados a back (esto lo vemos despues con fetch usando POST)
 
 enviarProductoAlBack(producto);
 
@@ -229,6 +239,11 @@ localStorage.clear();
 
 /********************************************************************************/
 // Funciones de Orden Superior
+
+// En JavaScript, las funciones del orden superior son funciones que pueden recibir otras
+// funciones como argumentos, retornar funciones como resultado, o ambas cosas.
+// Este concepto es fundamental en la programación funcional y es una característica poderosa
+// de JavaScript, que permite crear código más modular, reutilizable y flexible.
 
 // programación imperativa (en gral no se usa, se prefiere la declarativa)
 
@@ -549,6 +564,3 @@ console.log(ticket);
 
 let ticketExtraccion = banco.extraer("lucia.empresa.2024", 100);
 console.log(ticketExtraccion);
-
-/********************************************************************************/
-// DOM y Eventos en Javascript

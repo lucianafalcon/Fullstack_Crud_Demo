@@ -17,11 +17,24 @@ console.log("Hola");
 // alert →  Mostrar datos en un popup en el navegador
 alert("Tu número es tanto");
 
-/* SCOPE: Las variables se pueden utilizar en el mbiente que fueron credas 
-o en ambientes internos a donde fueron creadas */
+/* SCOPE: Las variables se pueden utilizar en el ambiente que fueron credas 
+o en ambientes internos a donde fueron creadas.
+
+Scope Global: Cuando una variable se declara fuera de cualquier función o bloque,
+tiene un scope global, lo que significa que es accesible desde cualquier parte del 
+código después de su declaración. 
+
+Scope Local: El scope local restringe el acceso a una variable al bloque o función 
+donde se declara. Existen dos tipos principales:
+1. Scope de Función: Variables declaradas dentro de una función no son accesibles fuera de ella.
+2. Scope de Bloque: Introducido con let y const en ES6, permite limitar el scope a un bloque específico,
+como en ciclos o condicionales.*/
 
 //---------------------------------------------------
 // Variables →  Estructura: iniciador nombre = valor;
+
+// JavaScript utiliza variables para almacenar datos que pueden variar durante la
+// ejecución del programa. Las variables se declaran con las palabras clave let o const.
 
 let emaildeusuario = "ejemplo@gmail.com";
 console.log(emaildeusuario);
@@ -140,9 +153,10 @@ console.log(`Impuesto: ${impuesto}`);
 // Existen 3 tipos en js: función flecha, función anónima y función declarada.
 
 //  Función flecha (arrow function) - opción 1:
-//    Cuando tengo solo una instrucción, no hacen falta las llaves {}
+//  Cuando tengo solo una instrucción, no hacen falta las llaves {}
+
 //  Función flecha (arrow function) - opción 2:
-//    Cuando tengo más de una instrucción, uso llaves {} y debo usar return si quiero devolver un valor
+//  uando tengo más de una instrucción, uso llaves {} y debo usar return si quiero devolver un valor
 
 //--------------------------------------------------
 // Función flecha (arrow function) - opción 1
@@ -190,12 +204,12 @@ console.log(suma2); // Imprime 9
 
 // Objetos → analogía: "diccionarios"
 // Agrupan propiedades (clave: valor) y métodos (funciones).
-//   Propiedades:
-//    se definen entre llaves {}.
-//    se definen en secuencia  clave : valor
-//   Métodos:
-//    se definen entre llaves {}.
-//    siempre con la palabra function (osea dentro de un objeto, se utiliza la palara function para definir un método).
+// 1. Propiedades:
+//  -  se definen entre llaves {}.
+//  -  se definen en secuencia  clave : valor
+// 2. Métodos:
+//  -  se definen entre llaves {}.
+//  - siempre con la palabra function (osea dentro de un objeto, se utiliza la palara function para definir un método).
 
 // Arrays → analogía: "colección" o "lista ordenada"
 // Agrupan elementos (del mismo o distinto tipo).
