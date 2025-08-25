@@ -1,10 +1,8 @@
 /********************************************************************************* 
-Funciones Constructoras y Almacenamiento: clases - json - local y sesion storage
-Funciones de Orden Superior: programación imperativa y declarativa - ej sist bancario
-DOM y Eventos en Javascript
+Funciones Constructoras y Almacenamiento: 
+clases - json - local y sesion storage
 *********************************************************************************/
 
-/********************************************************************************/
 // Clases
 
 // también llamados constructores (antes se llamaban funciones constructoras)
