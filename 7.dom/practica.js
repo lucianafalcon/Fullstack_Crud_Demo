@@ -1,6 +1,7 @@
 /********************************************************************************* 
 DOM y Eventos en Javascript:
-
+acceso al dom - modificación de nodos - plantillas lineales e interactividad - 
+enlaces y rutas
 *********************************************************************************/
 
 // Acceso a los elementos html desde js
@@ -48,13 +49,19 @@ contenedorDeProductos3.innerHTML = `
     </div>
 `;
 
+// -----
+// style
+
 // nodo + .style + propiedadCSS = valor
+
 // - nodo → es el elemento HTML que trajiste con getElementById, querySelector, etc. Ej: contenedorDeProductos3.
 // - .style → accede al objeto de estilos en línea del nodo (es como si le pusieras style="..." directo en el HTML).
 // - propiedadCSS → la propiedad que quieras cambiar (color, backgroundColor, fontSize, etc.).
 // - valor → lo que le quieras asignar (un string). Ej: "red", "20px", "#333", "center", etc.
+
 contenedorDeProductos3.style.color = "red";
 contenedorDeProductos3.style.border = "2px solid red";
+// -----
 
 // como colorear (un boton por ejemplo)
 titulo.classList.add("dark");
@@ -65,3 +72,25 @@ titulo.classList.remove("dark");
 // como recuperar un elemento de html en js:
 let btnAgregarClase = document.getElementById("btn-agregar-clase");
 console.log(btnAgregarClase);
+
+// -----
+// .addEventListener
+
+// .addEventListener("click","(evento)=>{función}")
+
+// alguno de los eventos mas usados:
+// - click -> evento al hacer click con el mouse
+// - drag -> es para arrastrar
+
+let btnAgregarClase2 = document.getElementById("btn-agregar-clase2");
+btnAgregarClase2.addEventListener("click", () => {
+  titulo.classList.add("dark");
+  contenedorDeProductos3.style.border = "2px solid blue";
+});
+
+let btnQuitarClase2 = document.getElementById("btn-quitar-clase2");
+btnQuitarClase2.addEventListener("click", () => {
+  titulo.classList.remove("dark");
+  contenedorDeProductos3.style.border = "none"; // quita el borde
+});
+// -----

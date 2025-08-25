@@ -10,6 +10,13 @@ un mismo estilo o comportamiento. A diferencia del id, que debe ser único,
 Ejemplo: <button class="boton">Botón 1</button>
          <button class="boton">Botón 2</button>
          <button class="boton">Botón 3</button>
+
+button:
+- Contenido fijo → HTML: 
+cuando ya sabes qué va a estar  en la página y no va a cambiar dinámicamente.
+-  Contenido generado o variable → JS:
+cuando no sabés de antemano qué o cuántos elementos habrá, por ejemplo 
+porque vienen de un array, una base de datos o API:
 *********************************************************************** -->
 
 <!DOCTYPE html>
@@ -30,6 +37,8 @@ Ejemplo: <button class="boton">Botón 1</button>
     <h1 id="title" class="titulo">App web</h1>
     <div class="productos"></div>
     <button id="btn-agregar-clase">Agregar Clase</button>
+    <button id="btn-agregar-clase2">Modo oscuro</button>
+    <button id="btn-quitar-clase2">Modo claro</button>
     <script src="./practica.js"></script>
   </body>
 </html>
