@@ -1,9 +1,8 @@
 /********************************************************************************* 
 Arrays y Objetos: 
-método push, indcludes, indexOf - array con ciclo for
+método push, includes e indexOf - array con ciclo for
 *********************************************************************************/
 
-/********************************************************************************/
 // Objetos vs Arrays
 
 // Tipos de datos primitivos:
@@ -25,7 +24,7 @@ método push, indcludes, indexOf - array con ciclo for
 //--------------------------------------------------
 // Objetos:
 let producto = {
-  // ← OBJETO completo
+  // OBJETO completo
   // clave: valor
   nombre: "telefono", // ← propiedad
   precio: 200,

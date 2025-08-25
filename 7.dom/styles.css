@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.producto {
+  border: 2px solid black;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: bold;
+  color: peru;
+}
+
+.dark {
+  background-color: black;
+}

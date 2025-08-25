@@ -1,8 +1,8 @@
 /********************************************************************************* 
-Funciones: declaradas, expresadas y flechas.
+Funciones: 
+declaradas, expresadas y flechas.
 *********************************************************************************/
 
-/********************************************************************************/
 // Funciones
 
 // Sirve para reutilizar código. Se declara una vez y se ejecuta cuando se la llama.

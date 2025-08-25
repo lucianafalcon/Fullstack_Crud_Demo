@@ -1,5 +1,6 @@
 /********************************************************************************* 
-Intro a JS: prompt - alert - tipos de datos primit. y valores especiales.
+Intro a JS: 
+prompt - alert - tipos de datos primit. y valores especiales.
 /********************************************************************************/
 
 // Intro a JS

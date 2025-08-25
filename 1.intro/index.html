@@ -1,30 +1,29 @@
-<!-- *****************************************************************************-->
-<!--                                script - async - defer  
-<!-- **************************************************************************** -->
+<!-- *****************************************************************************
+script:
+para vincular un archivo JavaScript externo a un documento HTML, se utiliza la 
+etiqueta <script> con el atributo src, que contiene la ruta  al archivo JavaScript.
+Esta etiqueta se puede colocar dentro del <head> o antes del cierre del <body>, 
+dependiendo de cuándo se desea que se cargue el script. 
 
-<!-- Para vincular un archivo JavaScript externo a un documento HTML, 
-se utiliza la etiqueta <script> con el atributo src, que contiene la ruta 
-al archivo JavaScript. Esta etiqueta se puede colocar dentro del <head> o antes
-del cierre del <body>, dependiendo de cuándo se desea que se cargue el script. -->
+async: 
+el atributo async permite que el script se cargue de manera asincrónica con respecto 
+al resto de la página. Esto significa que el navegador no necesita esperar a que el 
+script se cargue y ejecute para continuar procesando el resto del contenido HTML. 
+El script se ejecutará tan pronto como esté disponible, lo que puede mejorar la 
+velocidad de carga de la página.
 
-<!-- El atributo async permite que el script se cargue de manera asincrónica con respecto 
-al resto de la página. Esto significa que el navegador no necesita esperar a que el script 
-se cargue y ejecute para continuar procesando el resto del contenido HTML. El script se
-ejecutará tan pronto como esté disponible, lo que puede mejorar la velocidad de carga de la página.-->
-
-<!-- El atributo defer, por otro lado, también permite la carga asincrónica del script, pero 
-retrasa la ejecución del mismo hasta que todo el documento HTML ha sido completamente cargado 
-y analizado. Esto es útil para scripts que necesitan interactuar con elementos del DOM o cuyo orden 
-de ejecución es importante. -->
+defer:
+también permite la carga asincrónica del script, pero  retrasa la ejecución del mismo
+hasta que todo el documento HTML ha sido completamente cargado y analizado. Esto es
+útil para scripts que necesitan interactuar con elementos del DOM o cuyo orden 
+de ejecución es importante. 
+******************************************************************************* -->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Vincular CSS -->
-    <link rel="stylesheet" href="styles.css" />
-
     <title>Document</title>
   </head>
   <body>

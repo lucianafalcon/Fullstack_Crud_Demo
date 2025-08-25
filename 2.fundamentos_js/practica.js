@@ -1,8 +1,8 @@
 /********************************************************************************* 
-Fundamentos de JS: operaciones matematicas - comparaciones - condicionales.
+Fundamentos de JS: 
+operaciones matematicas - comparaciones - condicionales.
 *********************************************************************************/
 
-/********************************************************************************/
 // Operaciones Matemáticas
 
 let n1 = 1;

@@ -1,3 +1,17 @@
+<!-- **********************************************************************
+id:
+El id en HTML sirve para poder recuperar un elemento en js 
+Ejemplo: <button id="btn-agregar-clase">Agregar Clase</button> 
+
+class: 
+la clase en HTML se usa para agrupar elementos que comparten 
+un mismo estilo o comportamiento. A diferencia del id, que debe ser único,
+ varios elementos pueden tener la misma clase.
+Ejemplo: <button class="boton">Botón 1</button>
+         <button class="boton">Botón 2</button>
+         <button class="boton">Botón 3</button>
+*********************************************************************** -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,8 +22,14 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Esta es mi app</h1>
-
+    <ul>
+      <li class="categoria">inicio</li>
+      <li class="categoria">carrito</li>
+      <li class="categoria">mis compras</li>
+    </ul>
+    <h1 id="title" class="titulo">App web</h1>
+    <div class="productos"></div>
+    <button id="btn-agregar-clase">Agregar Clase</button>
     <script src="./practica.js"></script>
   </body>
 </html>
