@@ -25,13 +25,13 @@ const renderizarProductos = () => {
   let contenedor = document.querySelector(".productos");
   let htmlCompletoDeProductos = ""; // me armo el string de los productos
 
+  //con foreach accedo al callback --> y el callback me da acceso a cada uno de los productos
   productos.forEach((producto) => {
-    //con foreach accedo al callback --> y el callback me da acceso a cada uno de los productos
     htmlCompletoDeProductos += `
     <div class="producto">
         <h3>${producto.nombre}</h3>
         <h5>${producto.precio}</h5>
-        <button>Agregar al carrito</button>
+        <button onClick="agregarProducto(${producto.id})">Agregar al carrito</button>
     </div>
     `;
   });
@@ -40,3 +40,11 @@ const renderizarProductos = () => {
 };
 
 renderizarProductos();
+
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+const agregarProducto = (id) => {
+  let productoEncontrado = productos.find((producto) => producto.id === id);
+  console.log(productoEncontrado);
+  carrito.push(productoEncontrado);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+};
