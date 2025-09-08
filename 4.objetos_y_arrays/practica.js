@@ -1,6 +1,9 @@
 /********************************************************************************* 
 Arrays y Objetos: 
 método push, includes e indexOf - array con ciclo for
+
+Arrays y Objetos en JavaScript: 
+se inspecciona en la consola del navegador (DevTools → pestaña Console).
 *********************************************************************************/
 
 // Objetos vs Arrays

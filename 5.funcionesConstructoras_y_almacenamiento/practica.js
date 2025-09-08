@@ -1,6 +1,9 @@
 /********************************************************************************* 
 Funciones Constructoras y Almacenamiento: 
 clases - json - local y sesion storage
+
+Local storage: se puede ver en la pestaña Aplicación del navegador 
+(DevTools → pestaña Aplicación).
 *********************************************************************************/
 
 // Clases
