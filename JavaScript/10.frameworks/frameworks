@@ -70,6 +70,7 @@ y Vue es excelente para quienes buscan un equilibrio entre simplicidad y capacid
 decisiones informadas para satisfacer las demandas del mercado actual.
 
 **React**
+
 Tipo: Librería de JavaScript (desarrollada por Facebook).
 Enfoque: Creación de interfaces de usuario mediante componentes.
 Uso principal: Ideal para Single Page Applications (SPA) con interfaces interactivas.
@@ -83,6 +84,7 @@ Desventajas:
 Solo maneja la vista, por lo que requiere librerías adicionales para enrutamiento y estado.
 
 **Angular**
+
 Tipo: Framework completo (desarrollado por Google).
 Enfoque: Arquitectura MVC y basado en TypeScript.
 Uso principal: Proyectos grandes y empresariales que necesitan estructura robusta y escalable.
@@ -96,6 +98,7 @@ Curva de aprendizaje pronunciada.
 Puede ser excesivo para proyectos pequeños.
 
 **Vue**
+
 Tipo: Framework progresivo (creado por Evan You).
 Enfoque: Construcción de interfaces de forma incremental.
 Uso principal: Aplicaciones que comienzan pequeñas y pueden escalar con el tiempo.
@@ -119,6 +122,7 @@ Ambos paradigmas, MVC y MVVM, se aplican ampliamente en el desarrollo web modern
 En resumen, comprender y aplicar correctamente los paradigmas MVC y MVVM es crucial para el desarrollo de aplicaciones web robustas, especialmente en entornos donde la modularidad y la reactividad son esenciales.
 
 **Modelo-Vista-Controlador (MVC)**
+
 MVC es uno de los patrones de diseño más antiguos y ampliamente utilizados en la programación. Este paradigma separa una aplicación en tres componentes principales:
 `Modelo:` Es el encargado de gestionar los datos de la aplicación. Contiene la lógica de negocio y las reglas para manipular los datos.
 `Vista:` Es la interfaz de usuario. Presenta los datos al usuario y recibe la interacción de este.
@@ -127,6 +131,7 @@ MVC es uno de los patrones de diseño más antiguos y ampliamente utilizados en 
 El MVC es particularmente útil para aplicaciones donde las interfaces de usuario necesitan ser altamente reactivas, y el código debe ser modular para facilitar el desarrollo y mantenimiento.
 
 **Modelo-Vista-ViewModel (MVVM)**
+
 MVVM es un paradigma de diseño que surgió como evolución del MVC, especialmente en el contexto del desarrollo de aplicaciones con interfaces de usuario ricas y complejas, como las que se construyen con frameworks modernos de JavaScript (Angular, Vue, React).
 `Modelo:` Igual que en MVC, gestiona los datos y la lógica de negocio.
 `Vista:` La interfaz de usuario que se muestra al usuario final.
@@ -193,18 +198,14 @@ Cursor es una herramienta basada en Visual Studio Code (VSC), lo que permite a l
 **Instalar Cursor**
 
 1- Descargar Cursor:
-Ve a cursor.so y selecciona la opción para descargar la versión más reciente de Cursor.
+Ir a cursor.so y selecciona la opción para descargar la versión más reciente de Cursor.
 
-2- Instalación:
-El archivo descargado es un instalador compatible con múltiples plataformas (Windows, Mac, y Linux).
-Sigue los pasos habituales de instalación para tu sistema operativo.
-
-3- Conexión con Visual Studio Code (VSC):
+2- Conexión con Visual Studio Code (VSC):
 Cursor es un fork de Visual Studio Code, lo que significa que puedes usar tus configuraciones previas, extensiones y temas de VSC sin problemas.
 Durante la instalación, Cursor te pedirá acceso a tu configuración actual de VSC para sincronizar todo.
 
-4- Configuración inicial:
-Tras la instalación, puedes conectar Cursor con tus repositorios de GitHub o cualquier servicio de control de versiones que uses.
-También puedes iniciar sesión o crear una cuenta en Cursor para aprovechar las funcionalidades adicionales de la IA.
+3- Configuración inicial:
+Tras la instalación, podes conectar Cursor con los repos de GitHub o cualquier servicio de control de versiones.
+También se puede iniciar sesión o crear una cuenta en Cursor para aprovechar las funcionalidades adicionales de la IA.
 
 <--------------->
