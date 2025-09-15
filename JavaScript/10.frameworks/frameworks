@@ -110,7 +110,7 @@ Menor adopción empresarial comparado con React y Angular.
 
 <--------------->
 
-## Paradigmas de Programación
+## Paradigmas de Programación (diseño)
 
 En el desarrollo web, la arquitectura de una aplicación es fundamental para mantener el código organizado, modular y fácil de mantener. Para lograr esto, los desarrolladores emplean diferentes paradigmas de diseño, entre los cuales destacan MVC (Modelo-Vista-Controlador) y MVVM (Modelo-Vista-ViewModel).
 
@@ -133,5 +133,78 @@ MVVM es un paradigma de diseño que surgió como evolución del MVC, especialmen
 `ViewModel:` Es una abstracción de la Vista que maneja la lógica de presentación. Vincula los datos del Modelo con los elementos de la Vista de manera más directa, permitiendo que los cambios en el Modelo se reflejen automáticamente en la Vista y viceversa.
 
 El MVVM facilita el desarrollo de aplicaciones dinámicas donde la Vista necesita reflejar automáticamente los cambios en el Modelo, y es común en aplicaciones de una sola página (SPA, por sus siglas en inglés).
+
+<--------------->
+
+## SPA (Single Page Application)
+
+Es un tipo de aplicación web.
+
+Se llama “de una sola página” porque la aplicación carga un único documento HTML y, a medida que navegás, el contenido se actualiza dinámicamente con JavaScript, sin recargar toda la página desde el servidor.
+
+Ejemplos: Gmail, Google Drive, Trello.
+
+Ventajas:
+Experiencia de usuario rápida (sin recargas completas).
+Muy buena para apps interactivas.
+Se integran bien con frameworks modernos como React, Vue, Angular.
+
+Desventajas:
+SEO más complicado (porque el contenido se genera en el navegador).
+Puede ser más pesada en la carga inicial.
+
+**Pasos para usar SPA con un solo JS:**
+
+1- Tener un HTML base
+Una página principal (index.html) que tenga contenedores vacíos donde se irá cargando el contenido dinámicamente.
+
+<div id="header"></div>
+<div id="main"></div>
+<div id="footer"></div>
+
+2- Crear un solo archivo JS
+Por ejemplo app.js, que controlará todo el contenido y la navegación dentro de la SPA.
+
+3- Dividir el contenido en funciones o módulos
+Cada sección de la página se define en una función:
+`function cargarHeader() { ... }`
+`function cargarMain() { ... }`
+`function cargarFooter() { ... }`
+
+4- Cargar contenido dinámicamente
+Puedes cargar contenido desde funciones, archivos externos o APIs:
+`async function cargarSeccion(url, contenedorId) {`
+`const res = await fetch(url);`
+`const html = await res.text();`
+`document.getElementById(contenedorId).innerHTML = html;`
+`}`
+
+5- Simular navegación interna sin recargar
+Usar eventos, botones o enlaces para cambiar contenido:
+`document.getElementById('btn-home').addEventListener('click', () => cargarSeccion('home.html', 'main'));`
+`document.getElementById('btn-about').addEventListener('click', () => cargarSeccion('about.html', 'main'));`
+
+<--------------->
+
+## Cursor
+
+Cursor es una herramienta basada en Visual Studio Code (VSC), lo que permite a los desarrolladores familiarizados con este entorno migrar fácilmente sin grandes cambios en su flujo de trabajo. Además de las funcionalidades estándar de VSC, Cursor incorpora capacidades avanzadas de IA para mejorar la experiencia del desarrollador.
+
+**Instalar Cursor**
+
+1- Descargar Cursor:
+Ve a cursor.so y selecciona la opción para descargar la versión más reciente de Cursor.
+
+2- Instalación:
+El archivo descargado es un instalador compatible con múltiples plataformas (Windows, Mac, y Linux).
+Sigue los pasos habituales de instalación para tu sistema operativo.
+
+3- Conexión con Visual Studio Code (VSC):
+Cursor es un fork de Visual Studio Code, lo que significa que puedes usar tus configuraciones previas, extensiones y temas de VSC sin problemas.
+Durante la instalación, Cursor te pedirá acceso a tu configuración actual de VSC para sincronizar todo.
+
+4- Configuración inicial:
+Tras la instalación, puedes conectar Cursor con tus repositorios de GitHub o cualquier servicio de control de versiones que uses.
+También puedes iniciar sesión o crear una cuenta en Cursor para aprovechar las funcionalidades adicionales de la IA.
 
 <--------------->
