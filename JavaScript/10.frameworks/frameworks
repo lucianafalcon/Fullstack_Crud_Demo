@@ -1,0 +1,137 @@
+## Librería vs Framework
+
+Librería
+**Definición** Conjunto de funciones/utilidades que usás cuando querés.
+**Control** Vos llamás a la librería cuando necesitás.
+**Instalación** `npm install nombre-libreria`
+**Ejemplo de uso** `axios.get(...)`
+**Organización** No impone estructura.
+**Escalabilidad** Mejor para proyectos pequeños o funciones puntuales.
+**Herramientas integradas** Generalmente limitada a la funcionalidad principal.
+
+Framework
+**Definición** Estructura completa que dicta cómo se organiza y ejecuta tu app.
+**Control** El framework controla el flujo de ejecución y vos seguís sus reglas.
+**Instalación** `npm install nombre-framework`
+**Ejemplo de uso** Crear componentes, rutas, estados en React o Angular
+**Organización** Sí, define carpetas, componentes, servicios y flujo.
+**Escalabilidad** Ideal para proyectos grandes y complejos.
+**Herramientas integradas** Enrutamiento, manejo de estado, formularios, peticiones HTTP, testing.
+
+<--------------->
+
+## Pasos para iniciar un proyecto con NPM
+
+1- Crear un directorio para tu proyecto
+**mkdir mi-proyecto**
+**cd mi-proyecto**
+
+2- Inicializar NPM
+**npm init -y**
+Esto crea un archivo package.json con valores por defecto.
+Este archivo guarda información del proyecto y sus dependencias.
+
+3- Estructura básica de package.json
+`{`
+`"name": "mi-proyecto",`
+`"version": "1.0.0",`
+`"description": "Proyecto inicializado con NPM",`
+`"main": "index.js",`
+`"scripts": {`
+`    "test": "echo \"Error: no test specified\" && exit 1"`
+`},`
+`"author": "Tu Nombre",`
+`"license": "ISC"`
+`}`
+
+4- Instalar dependencias
+Para agregar librerías a tu proyecto:
+**npm install express**
+Esto agrega express a package.json y crea la carpeta node_modules.
+
+5- Usar scripts en package.json
+Puedes agregar scripts para automatizar tareas, por ejemplo:
+`"scripts": {`
+`start": "node index.js"`
+`}`
+Luego ejecutas tu proyecto con:
+**npm start**
+
+<--------------->
+
+## Librerías y Frameworks: React, Angular y Vue
+
+En el desarrollo web moderno, elegir la herramienta adecuada es crucial. Entre las más populares están React, Angular y Vue,
+cada una con características únicas según el tipo de proyecto.
+
+La elección entre React, Angular y Vue depende del contexto del proyecto y las necesidades específicas del equipo de desarrollo.
+React es preferible para aplicaciones que requieren una alta interactividad y flexibilidad; Angular es ideal para proyectos grandes y estructurados;
+y Vue es excelente para quienes buscan un equilibrio entre simplicidad y capacidad de escalabilidad. Conocer las fortalezas de cada uno permite tomar
+decisiones informadas para satisfacer las demandas del mercado actual.
+
+**React**
+Tipo: Librería de JavaScript (desarrollada por Facebook).
+Enfoque: Creación de interfaces de usuario mediante componentes.
+Uso principal: Ideal para Single Page Applications (SPA) con interfaces interactivas.
+
+Ventajas:
+Alta modularidad.
+Gran ecosistema de herramientas y librerías complementarias.
+Virtual DOM que optimiza el rendimiento.
+
+Desventajas:
+Solo maneja la vista, por lo que requiere librerías adicionales para enrutamiento y estado.
+
+**Angular**
+Tipo: Framework completo (desarrollado por Google).
+Enfoque: Arquitectura MVC y basado en TypeScript.
+Uso principal: Proyectos grandes y empresariales que necesitan estructura robusta y escalable.
+
+Ventajas:
+Framework completo con todas las herramientas integradas.
+Sistema de inyección de dependencias y arquitectura modular.
+
+Desventajas:
+Curva de aprendizaje pronunciada.
+Puede ser excesivo para proyectos pequeños.
+
+**Vue**
+Tipo: Framework progresivo (creado por Evan You).
+Enfoque: Construcción de interfaces de forma incremental.
+Uso principal: Aplicaciones que comienzan pequeñas y pueden escalar con el tiempo.
+
+Ventajas:
+Curva de aprendizaje suave.
+Equilibrio entre simplicidad (React) y estructura (Angular).
+Flexible y fácil de adoptar gradualmente.
+
+Desventajas:
+Menor adopción empresarial comparado con React y Angular.
+
+<--------------->
+
+## Paradigmas de Programación
+
+En el desarrollo web, la arquitectura de una aplicación es fundamental para mantener el código organizado, modular y fácil de mantener. Para lograr esto, los desarrolladores emplean diferentes paradigmas de diseño, entre los cuales destacan MVC (Modelo-Vista-Controlador) y MVVM (Modelo-Vista-ViewModel).
+
+Ambos paradigmas, MVC y MVVM, se aplican ampliamente en el desarrollo web moderno. Frameworks como Angular, React y Vue han adoptado y adaptado estos paradigmas para permitir a los desarrolladores construir aplicaciones complejas y mantenibles con mayor eficiencia. El uso de estos patrones de diseño no solo organiza el código, sino que también mejora la escalabilidad y testabilidad de las aplicaciones.
+
+En resumen, comprender y aplicar correctamente los paradigmas MVC y MVVM es crucial para el desarrollo de aplicaciones web robustas, especialmente en entornos donde la modularidad y la reactividad son esenciales.
+
+**Modelo-Vista-Controlador (MVC)**
+MVC es uno de los patrones de diseño más antiguos y ampliamente utilizados en la programación. Este paradigma separa una aplicación en tres componentes principales:
+`Modelo:` Es el encargado de gestionar los datos de la aplicación. Contiene la lógica de negocio y las reglas para manipular los datos.
+`Vista:` Es la interfaz de usuario. Presenta los datos al usuario y recibe la interacción de este.
+`Controlador:` Actúa como intermediario entre la Vista y el Modelo. Procesa las entradas del usuario recibidas a través de la Vista, las interpreta y realiza las acciones necesarias sobre el Modelo.
+
+El MVC es particularmente útil para aplicaciones donde las interfaces de usuario necesitan ser altamente reactivas, y el código debe ser modular para facilitar el desarrollo y mantenimiento.
+
+**Modelo-Vista-ViewModel (MVVM)**
+MVVM es un paradigma de diseño que surgió como evolución del MVC, especialmente en el contexto del desarrollo de aplicaciones con interfaces de usuario ricas y complejas, como las que se construyen con frameworks modernos de JavaScript (Angular, Vue, React).
+`Modelo:` Igual que en MVC, gestiona los datos y la lógica de negocio.
+`Vista:` La interfaz de usuario que se muestra al usuario final.
+`ViewModel:` Es una abstracción de la Vista que maneja la lógica de presentación. Vincula los datos del Modelo con los elementos de la Vista de manera más directa, permitiendo que los cambios en el Modelo se reflejen automáticamente en la Vista y viceversa.
+
+El MVVM facilita el desarrollo de aplicaciones dinámicas donde la Vista necesita reflejar automáticamente los cambios en el Modelo, y es común en aplicaciones de una sola página (SPA, por sus siglas en inglés).
+
+<--------------->

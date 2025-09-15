@@ -17,7 +17,7 @@ const productos = [
   { id: 10, nombre: "Webcam Full HD Logitech", precio: 32000, stock: 11 },
 ];
 // en realidad si viene de la db lo recupero en js con fetch: const productos = fetch()
-// --> ver clase db
+// --> ver carpeta: "8.api_crud_async_errores/practica"
 //-----------------
 
 // renderizar = producir una representación visual de algo (mostrar)

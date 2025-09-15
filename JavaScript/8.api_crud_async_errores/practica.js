@@ -227,3 +227,16 @@ btnActualizar.addEventListener("click", actualizarPosteo3);
 // const obtenerPosteos = async () => { ... }
 // const obtenerPosteos2 = () => { ... }
 //Estas funciones hacen GET, pero solo muestran los posts en tu contenedor.
+
+//--------------------------------------------------
+// Simular una DB en front:
+
+// Sirve cuando la db/api está caída
+
+const obtenerProductos = async () => {
+  const response = await fetch("./db.json"); // ruta a tu db.json local
+  const res = await response.json();
+  console.log(res.productos);
+};
+
+obtenerProductos();
