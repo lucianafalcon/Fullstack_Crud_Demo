@@ -1,3 +1,15 @@
+/******************************************\*******************************************
+Contenido:
+Librería vs Framework
+Pasos para iniciar un proyecto con NPM
+Librerías y Frameworks: React, Angular y Vue
+Paradigmas de Programación (diseño)
+SPA (Single Page Application)
+Cursor
+
+L. Falcon
+****************************************\*\*\*\*****************************************/
+
 ## Librería vs Framework
 
 Librería

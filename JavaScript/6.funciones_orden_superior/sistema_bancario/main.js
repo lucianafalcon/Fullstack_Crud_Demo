@@ -1,11 +1,12 @@
-//--------------------------------------------------
-// Ejemplo de un sistema bancario
+/********************************************************************************* 
+Ejemplo: Sistema Bancario
 
-// que tenga:
-// clientes
-// consultar cliente // alias
-// depositar // alias
-// extraer // alias
+Contenido:
+    clientes
+    consultar cliente // alias
+    depositar // alias
+    extraer // alias
+*********************************************************************************/
 
 const clientesBanco = [
   {

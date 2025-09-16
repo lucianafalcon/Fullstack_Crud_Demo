@@ -1,6 +1,11 @@
 /********************************************************************************* 
-Ejemplo:
-Renderizado dinámico de productos en el carrito
+Ejemplo: Carrito
+
+Contenido:
+  Renderizado dinámico de productos en el carrito
+
+---------
+L. Falcon
 *********************************************************************************/
 
 // simulo que esto es la base de datos
