@@ -1,5 +1,6 @@
 /**********************************************************************
 Algoritmo para calcular la cantidad de nutrientes consumidas por día.
+
 Falcon, Luciana.
 **********************************************************************/
 

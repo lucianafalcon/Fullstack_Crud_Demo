@@ -2,10 +2,10 @@
 Ejemplo: Sistema Bancario
 
 Contenido:
-    clientes
-    consultar cliente // alias
-    depositar // alias
-    extraer // alias
+  clientes
+  consultar cliente // alias
+  depositar // alias
+  extraer // alias
 *********************************************************************************/
 
 const clientesBanco = [
