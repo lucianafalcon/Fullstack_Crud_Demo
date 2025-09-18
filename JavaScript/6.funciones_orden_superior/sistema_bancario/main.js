@@ -1,5 +1,5 @@
 /********************************************************************************* 
-Ejemplo: Sistema Bancario
+Simulación de Banco en JavaScript.
 
 Contenido:
   clientes

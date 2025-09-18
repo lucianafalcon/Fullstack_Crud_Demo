@@ -1,5 +1,5 @@
 /********************************************************************************* 
-Ejemplo: Carrito
+Simulación de carrito en JavaScript.
 
 Contenido:
   Renderizado dinámico de productos en el carrito
