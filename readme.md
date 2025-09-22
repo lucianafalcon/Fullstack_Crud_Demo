@@ -35,7 +35,7 @@ Covers everything from the basics of the language to modern frameworks, includin
 
 Mini-proyects:
 
-- **Macronutrients Counter 🥑** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/macros.html)
+- **Macronutrients Counter 🥑** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/macros/index.html)
   - **Features:** Track and update your macronutrients in real time, persist in localStorage
 
 - **Ecommerce Cart 🛒** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/ecommerce.html)
