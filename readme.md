@@ -35,10 +35,10 @@ Covers everything from the basics of the language to modern frameworks, includin
 
 Mini-proyects:
 
-- **Macronutrients Counter 🥑** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/macros/index.html)
+- **Macronutrients Counter 🥑** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/JavaScript/macronutrientes/index.html)
   - **Features:** Track and update your macronutrients in real time, persist in localStorage
 
-- **Ecommerce Cart 🛒** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/ecommerce.html)
+- **Ecommerce Cart 🛒** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/JavaScript/ecommerce_js/index.html)
   - **Features:** Add/remove products, persist in localStorage
   
 ### ▶️ Execution
