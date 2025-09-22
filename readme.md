@@ -12,8 +12,6 @@ Its goal is to serve as a reference and practice material to strengthen knowledg
 
 1. [JavaScript Modules](#-javascript-modules)
 2. [SQL Modules](#-sql-modules)
-3. [Versión en Español](#-versión-en-español)
-4. [License](#-license)
 
 ---
 
@@ -24,16 +22,26 @@ Its goal is to serve as a reference and practice material to strengthen knowledg
 
 Covers everything from the basics of the language to modern frameworks, including essential tools like Node.js and NPM.
 
-- **1.intro** – Introduction to JavaScript and basic concepts.
-- **2.fundamentosJs** – Language fundamentals: variables, data types, and operators.
-- **3.funciones_y_parametros** – Functions, parameters, and return values.
-- **4.objetos_y_arrays** – Working with objects and arrays.
-- **5.funcionesConstructoras_y_almacenamiento** – Constructor functions and data storage.
-- **6.funciones_orden_superior** – Higher-order functions, callbacks, and methods (map, filter, reduce).
-- **7.dom** – DOM manipulation and events.
-- **8.api_crud_async_errores** – API consumption, CRUD operations, asynchrony, and error handling.
-- **9.librerias_cdn** – Using external libraries via CDN.
-- **10.frameworks/deploy** – Introduction to JavaScript frameworks and deployment.
+- **1. Intro** – Introduction to JavaScript and basic concepts.
+- **2. Fundamentos JS** – Variables, types, operators.
+- **3. Funciones y parámetros** – Functions, parameters, return values.
+- **4. Objetos y Arrays** – Working with objects and arrays.
+- **5. Funciones constructoras y almacenamiento**
+- **6. Funciones de orden superior**
+- **7. DOM**
+
+  - **Mini-Proyecto:** Ecommerce Cart
+    - **Features:** Add/remove products, persist in localStorage
+    - **Technologies:** HTML, CSS, JS
+    - **Live Demo:** [View Project](https://lucianafalcon.github.io/Fullstack_Crud_Demo/ecommerce.html) 🛒
+
+- **8. API, CRUD, Async**
+  - **Mini-Proyecto:** Macronutrients Counter
+    - **Features:** Track and update your macronutrients in real time, persist in localStorage
+    - **Technologies:** HTML, CSS, JS
+    - **Live Demo:** [View Project](https://lucianafalcon.github.io/Fullstack_Crud_Demo/macros.html) 🥑
+- **9. Librerías CDN**
+- **10. Frameworks / Deploy**
 
 ### ▶️ Execution
 
@@ -96,7 +104,3 @@ Cubre desde los conceptos básicos del lenguaje hasta frameworks modernos, pasan
 4. Modificar y probar los ejemplos directamente en el navegador para visualizar los resultados en tiempo real.
 
 ---
-
-## 📜 License
-
-This repository is released under the [CC0 License](LICENSE).

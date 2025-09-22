@@ -293,7 +293,7 @@ const crearProducto3 = async () => {
 
 // Recordar asociar el sweetAlert2 al HTML:
 // - <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-// - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+// -     <link rel="stylesheet" type="text/html" href="sweetalert2.min.css" />
 
 // Ejemplo mensaje con SweetAlert2:
 const limpiarCarrito = () => {
