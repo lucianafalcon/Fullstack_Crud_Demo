@@ -26,23 +26,21 @@ Covers everything from the basics of the language to modern frameworks, includin
 - **2. Fundamentos JS** – Variables, types, operators.
 - **3. Funciones y parámetros** – Functions, parameters, return values.
 - **4. Objetos y Arrays** – Working with objects and arrays.
-- **5. Funciones constructoras y almacenamiento**
-- **6. Funciones de orden superior**
-- **7. DOM**
+- **5.funcionesConstructoras_y_almacenamiento** – Funciones constructoras y almacenamiento de datos.
+- **6.funciones_orden_superior** – Funciones de orden superior, callbacks y métodos `map`, `filter`, `reduce`.
+- **7.dom** – Manipulación del DOM y eventos.
+- **8.api_crud_async_errores** – Consumo de APIs, operaciones CRUD, asincronía y manejo de errores.
+- **9.librerias_cdn** – Uso de librerías externas a través de CDN.
+- **10.frameworks/deploy** – Introducción a frameworks y deploy de JavaScript.
 
-  - **Mini-Proyecto:** Ecommerce Cart
-    - **Features:** Add/remove products, persist in localStorage
-    - **Technologies:** HTML, CSS, JS
-    - **Live Demo:** [View Project](https://lucianafalcon.github.io/Fullstack_Crud_Demo/ecommerce.html) 🛒
+Mini-proyects:
 
-- **8. API, CRUD, Async**
-  - **Mini-Proyecto:** Macronutrients Counter
-    - **Features:** Track and update your macronutrients in real time, persist in localStorage
-    - **Technologies:** HTML, CSS, JS
-    - **Live Demo:** [View Project](https://lucianafalcon.github.io/Fullstack_Crud_Demo/macros.html) 🥑
-- **9. Librerías CDN**
-- **10. Frameworks / Deploy**
+- **Macronutrients Counter 🥑** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/macros.html)
+  - **Features:** Track and update your macronutrients in real time, persist in localStorage
 
+- **Ecommerce Cart 🛒** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/ecommerce.html)
+  - **Features:** Add/remove products, persist in localStorage
+  
 ### ▶️ Execution
 
 1. Clone this repository and open it in a text editor ([Visual Studio Code](https://code.visualstudio.com/) recommended).
