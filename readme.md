@@ -33,14 +33,6 @@ Covers everything from the basics of the language to modern frameworks, includin
 - **9.librerias_cdn** – Uso de librerías externas a través de CDN.
 - **10.frameworks/deploy** – Introducción a frameworks y deploy de JavaScript.
 
-Mini-proyects:
-
-- **Macronutrients Counter 🥑** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/JavaScript/macronutrientes/index.html)
-  - **Features:** Track and update your macronutrients in real time, persist in localStorage
-
-- **Ecommerce Cart 🛒** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/JavaScript/ecommerce_js/index.html)
-  - **Features:** Add/remove products, persist in localStorage
-  
 ### ▶️ Execution
 
 1. Clone this repository and open it in a text editor ([Visual Studio Code](https://code.visualstudio.com/) recommended).
