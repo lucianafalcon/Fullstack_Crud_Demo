@@ -123,7 +123,7 @@ ON alumnos.id_colegio = colegios.id
 WHERE provincia LIKE "Buenos%";
 
 -- ----------------------
--- funcions de agregación
+-- funciones de agregación
 
 -- COUNT
 SELECT COUNT(nota) FROM alumnos; /*devuelve un solo valor: la cantidad total de filas donde nota NO es NULL en toda la tabla alumnos*/

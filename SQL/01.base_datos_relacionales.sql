@@ -5,6 +5,18 @@
 		- DROP TABLE
 		- CREATE
         - INSERT INTO
+
+    Primary Key →
+        Identifica de manera única cada fila de la tabla
+        No puede repetirse
+        No puede ser NULL
+        Es usada para referenciarla desde otras tablas (Foreign Key)
+
+    Foreign Key →
+        Apunta a una Primary Key en otra tabla
+        Mantiene la integridad referencial (no permite valores inexistentes)
+        Puede repetirse en varias filas (varios registros pueden referirse al mismo registro de la otra tabla)
+        Puede ser NULL si se permite
 ========================================================== */
 
 -- Eliminar tablas si existen
@@ -13,9 +25,8 @@ DROP TABLE IF EXISTS clientes;
 DROP TABLE IF EXISTS productos;
 DROP TABLE IF EXISTS pedidos;
 
--- =========================
+
 -- Tabla: empleados
--- =========================
 CREATE TABLE empleados (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50),
@@ -29,9 +40,8 @@ INSERT INTO empleados (nombre, apellido, departamento) VALUES
 ('María', 'López', 'Marketing'),
 ('Juan', 'Martínez', 'Ventas');
 
--- =========================
+
 -- Tabla: clientes
--- =========================
 CREATE TABLE clientes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50),
@@ -45,9 +55,8 @@ INSERT INTO clientes (nombre, direccion, ciudad) VALUES
 ('Beatriz Gómez', 'Calle Luna 56', 'Sevilla'),
 ('Andrés Torres', 'Calle Sol 12', 'Madrid');
 
--- =========================
+
 -- Tabla: productos
--- =========================
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50),
@@ -61,3 +70,32 @@ INSERT INTO productos (nombre, categoria, precio) VALUES
 ('Teclado Logitech', 'Electrónica', 45.00),
 ('Monitor LG', 'Electrónica', 300.00),
 ('Mouse Razer', 'Electrónica', 50.00);
+
+-- ----------------------
+-- Primary Key 
+
+-- Clientes
+CREATE TABLE clientes (
+    id_cliente INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50),
+    email VARCHAR(100)
+);
+
+INSERT INTO clientes (nombre, email) VALUES
+('Ana', 'ana@mail.com'),
+('Luis', 'luis@mail.com');
+
+-- ----------------------
+-- Foreign Key 
+
+-- Pedidos
+CREATE TABLE pedidos (
+    id_pedido INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_cliente INT NOT NULL,
+    fecha DATE,
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
+);
+
+INSERT INTO pedidos (id_cliente, fecha) VALUES
+(1, '2025-10-02'),
+(2, '2025-10-03');
