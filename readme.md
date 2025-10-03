@@ -26,22 +26,21 @@ Covers everything from the basics of the language to modern frameworks, includin
 - **2. Fundamentos JS** – Variables, types, operators.
 - **3. Funciones y parámetros** – Functions, parameters, return values.
 - **4. Objetos y Arrays** – Working with objects and arrays.
-- **5. Funciones constructoras y almacenamiento**
-- **6. Funciones de orden superior**
-- **7. DOM**
+- **5.funcionesConstructoras_y_almacenamiento** – Funciones constructoras y almacenamiento de datos.
+- **6.funciones_orden_superior** – Funciones de orden superior, callbacks y métodos `map`, `filter`, `reduce`.
+- **7.dom** – Manipulación del DOM y eventos.
+- **8.api_crud_async_errores** – Consumo de APIs, operaciones CRUD, asincronía y manejo de errores.
+- **9.librerias_cdn** – Uso de librerías externas a través de CDN.
+- **10.frameworks/deploy** – Introducción a frameworks y deploy de JavaScript.
 
-  - **Mini-Proyecto:** Ecommerce Cart
-    - **Features:** Add/remove products, persist in localStorage
-    - **Technologies:** HTML, CSS, JS
-    - **Live Demo:** [View Project](https://lucianafalcon.github.io/Fullstack_Crud_Demo/ecommerce.html) 🛒
+Mini-proyects:
 
-- **8. API, CRUD, Async**
-  - **Mini-Proyecto:** Macronutrients Counter
-    - **Features:** Track and update your macronutrients in real time, persist in localStorage
-    - **Technologies:** HTML, CSS, JS
-    - **Live Demo:** [View Project](https://lucianafalcon.github.io/Fullstack_Crud_Demo/macros.html) 🥑
-- **9. Librerías CDN**
-- **10. Frameworks / Deploy**
+- **Macronutrients Counter 🥑** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/macros.html)
+
+  - **Features:** Track and update your macronutrients in real time, persist in localStorage
+
+- **Ecommerce Cart 🛒** [Live Demo](https://lucianafalcon.github.io/Fullstack_Crud_Demo/ecommerce.html)
+  - **Features:** Add/remove products, persist in localStorage
 
 ### ▶️ Execution
 
@@ -59,10 +58,11 @@ Covers everything from the basics of the language to modern frameworks, includin
 
 Planned modules include:
 
-- **1.intro** – Basic SQL syntax and queries.
-- **2.sentencias_y_sublenguajes** –
-- **3.consultas_subconsultas_ddl** –
-- **4.objetos_tablas** –
+- **1. Intro** – Basic SQL syntax and queries.
+- **2. Statements and Sublanguages** – Overview of SQL statements and their sublanguages (DML, DDL, DCL, TCL).
+- **3. Queries, Subqueries, and DDL** – How to write queries, nested queries, and define database structures.
+- **4. Table Objects** – Creating, modifying, and managing tables and their properties.
+- **5. Views** – Creating and using views to simplify queries and enhance security.
 
 ### ▶️ Execution
 
@@ -73,34 +73,5 @@ Planned modules include:
 ### 💡 Extra (Recommended Tools)
 
 4. [Lucidchart](https://lucid.app/) for designing DER.
+5. [Mockaroo](https://www.mockaroo.com/) Generate test data.
 
----
-
-## 🇪🇸 Versión en Español
-
-Este repositorio contiene ejemplos, ejercicios y explicaciones realizados por mí, organizados en módulos temáticos, para comprender y dominar la creación de aplicaciones web modernas.  
-Su objetivo es servir como material de referencia y práctica para reforzar conocimientos en tecnología de la información (IT) y desarrollo FullStack.
-
-## 📂 Módulos JavaScript
-
-Cubre desde los conceptos básicos del lenguaje hasta frameworks modernos, pasando por herramientas esenciales como Node.js y NPM.
-
-- **1.intro** – Introducción a JavaScript y conceptos básicos.
-- **2.fundamentosJs** – Fundamentos del lenguaje: variables, tipos de datos y operadores.
-- **3.funciones_y_parametros** – Funciones, parámetros y retorno de valores.
-- **4.objetos_y_arrays** – Manejo de objetos y arrays.
-- **5.funcionesConstructoras_y_almacenamiento** – Funciones constructoras y almacenamiento de datos.
-- **6.funciones_orden_superior** – Funciones de orden superior, callbacks y métodos `map`, `filter`, `reduce`.
-- **7.dom** – Manipulación del DOM y eventos.
-- **8.api_crud_async_errores** – Consumo de APIs, operaciones CRUD, asincronía y manejo de errores.
-- **9.librerias_cdn** – Uso de librerías externas a través de CDN.
-- **10.frameworks/deploy** – Introducción a frameworks y deploy de JavaScript.
-
-### ▶️ Ejecución
-
-1. Clonar este repositorio y abrirlo en un editor de texto (recomendado: [Visual Studio Code](https://code.visualstudio.com/)).
-2. Abrir los archivos `.html` en un navegador web moderno.
-3. Cada carpeta incluye los scripts correspondientes, con extensión `.js`.
-4. Modificar y probar los ejemplos directamente en el navegador para visualizar los resultados en tiempo real.
-
----
